@@ -1,3 +1,4 @@
+// TODO: For development only. Delete file and remove import in js file later.
 const recordMetadata = {
     name: 'name',
     lastUsedNumber: 'number',
