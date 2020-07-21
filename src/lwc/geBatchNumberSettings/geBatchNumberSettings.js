@@ -18,11 +18,13 @@ const COLUMNS = [
 ];
 
 export default class geBatchNumberSettings extends LightningElement {
+    _hasAccess = false;
     _autonumberRecords = [];
-    columns = COLUMNS;
+    _columns = COLUMNS;
 
     connectedCallback() {
         this.retrieveAutonumberRecords();
+        this._hasAccess = true;
     }
 
     async retrieveAutonumberRecords() {
