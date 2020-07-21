@@ -3710,6 +3710,7 @@
         <members>geAutocompleteOption</members>
         <members>geBatchGiftEntryHeader</members>
         <members>geBatchGiftEntryTable</members>
+        <members>geBatchNumberSettings</members>
         <members>geBatchWizard</members>
         <members>geConstants</members>
         <members>geDonationMatching</members>
