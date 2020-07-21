@@ -58,4 +58,6 @@ export default class geBatchNumberSettings extends LightningElement {
         // do something
         console.log('creating batch number record...');
     }
+
+    // TODO: Add QA locators
 }
