@@ -3,12 +3,10 @@
         <lightning-layout class='slds-m-around_x-large'
                           multiple-rows='true'>
 
-            <lightning-layout-item class='slds-m-vertical_small'></lightning-layout-item>
-
             <lightning-layout-item size='12'
                                    class='slds-m-vertical_small'>
                 <div class="slds-section slds-is-open">
-                    <h3 class="slds-section__title slds-theme_shade">
+                    <h3 class="slds-section__title slds-theme_shade slds-m-bottom_small">
                         <span class='slds-truncate slds-p-horizontal_small'
                               title='Batch Number Settings'>
                             Batch Number Settings
@@ -16,7 +14,17 @@
                     </h3>
                     <div aria-hidden="false"
                          class="slds-section__content">
-                        <p class='slds-text-body_regular slds-p-top_small'>
+                        <template if:true={_hasBatchNumberError}>
+                            <c-util-page-level-message variant='error'
+                                                       title='Error'>
+                                <p slot='body'
+                                   class='slds-m-bottom_small slds-text-color_destructive'>
+                                    There was an error creating a batch number format.
+                                    Please review and try again.
+                                </p>
+                            </c-util-page-level-message>
+                        </template>
+                        <p class='slds-text-body_regular'>
                             Batch numbers are unique identifiers for batches created for Gift Entry,
                             NPSP Data Importer, and the legacy Batch Gift Entry tool.
                             Customize the format and set one as active. The auto-generated value will appear

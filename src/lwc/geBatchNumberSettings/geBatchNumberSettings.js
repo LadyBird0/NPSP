@@ -19,6 +19,7 @@ const COLUMNS = [
 
 export default class geBatchNumberSettings extends LightningElement {
     _hasAccess = false;
+    _hasBatchNumberError = true;
     _autonumberRecords = [];
     _columns = COLUMNS;
 
